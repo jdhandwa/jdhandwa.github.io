@@ -1,0 +1,300 @@
+body {
+    background-color: rgb(253, 253, 253);
+}
+
+#title {
+    color: rgba(0, 0, 0);
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+}
+
+#header {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#social {
+    display: flex;
+    margin-top: 120px;
+    position: relative;
+}
+
+#social img {
+    width: 75px;
+    height: 75px;
+}
+
+#outline {
+    border: solid black 0.2em;
+}
+
+.no_space {
+    margin-top: 1px;
+    margin-bottom: 0px;
+    font-size: x-large;
+}
+
+#magnify {
+    position: fixed;
+    right: 8%;
+    top: 10%;
+    width: 8em;
+    margin-top: -2.5em;
+}
+
+#me {
+    width: 225px;
+    height: 225px;
+    opacity: 0.9;
+}
+
+#spacer {
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+#spacer2 {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#bio {
+    width: 72%;
+    font-size: 20px;
+    color: rgb(78, 78, 78);
+}
+
+.side-text {
+    margin-top: 40px;
+    width: 20%;
+}
+
+.shadow {
+    color: black;
+    font: bold 12px Helvetica, Arial, Sans-Serif;
+    text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902;
+}
+
+.shadow:hover {
+    position: relative;
+    top: -3px;
+    left: -3px;
+    text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902, 4px 4px #fe4902, 5px 5px #fe4902, 6px 6px #fe4902;
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+
+.collapsible {
+    background-color: wheat;
+    color: black;
+    cursor: crosshair;
+    padding: 18px;
+    width: 100%;
+    border: thin dotted black;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    font-size: 30px;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.collapsible:hover {
+    background-color: rgb(252, 245, 186);
+}
+
+
+/* Style the collapsible content. Note: hidden by default */
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border: none;
+}
+
+.subfield {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.subfield-vert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* DEMO-SPECIFIC STYLES */
+
+.typewriter h3 {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid wheat;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .05em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(60, end), blink-caret 0.5s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 50%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: wheat
+    }
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+    background-color: rgb(221, 223, 152);
+    color: rgb(39, 36, 6);
+}
+
+
+/* Style the back side */
+
+.flip-card-back {
+    background-color: #f1f1f1;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+blockquote {
+    font-size: 15px;
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: .5em 10px;
+    padding: 0 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    line-height: 1.4;
+}
+
+blockquote:before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    color: black;
+    font-size: 3em;
+}
+
+p {
+    margin: 0;
+}
+
+footer {
+    margin: 0;
+    text-align: right;
+    font-size: 1em;
+    font-style: italic;
+}
+
+#courses {
+    margin-left: 20%;
+}
+
+.threeD {
+    color: black;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    font-family: sans-serif;
+    letter-spacing: 0.05em;
+    transition: 1s;
+    text-shadow: 0.5px 0.5px 0 whitesmoke, 0.5px 1px 0 whitesmoke, 0.5px 1.5px 0 whitesmoke, 0.5px 2px 0 whitesmoke, 0.5px 2.5px 0 whitesmoke, 0.5px 3px 0 whitesmoke, 0.5px 3.5px 0 whitesmoke, 0.5px 4px 0 whitesmoke, 2.5px 6.5px 7.5px black;
+}
+
+.threeD:hover {
+    transition: 0.3s;
+    transform: scale(1.1)translate(-50%, -50%);
+    text-shadow: 0.5px -0.5px 0 whitesmoke, 0.5px -1px 0 whitesmoke, 0.5px -1.5px 0 whitesmoke, 0.5px -2px 0 whitesmoke, 0.5px -2.5px 0 whitesmoke, 0.5px -3px 0 whitesmoke, 0.5px -3.5px 0 whitesmoke, 0.5px -4px 0 whitesmoke, 2.5px -6.5px 7.5px black, 2.5px -6.5px 12.5px #808080;
+}
