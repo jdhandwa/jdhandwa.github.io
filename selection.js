@@ -82,12 +82,12 @@ window.onload = function() {
                     y: 40,
                     indexLabel: "Python"
                 },
-                { y: 30, indexLabel: "C++" },
-                { y: 10, indexLabel: "C" },
-                { y: 5, indexLabel: "Java" },
-                { y: 3, indexLabel: "R" },
+                { y: 20, indexLabel: "C++" },
+                { y: 3, indexLabel: "C" },
+                { y: 3, indexLabel: "Java" },
+                { y: 2, indexLabel: "R" },
                 { y: 2, indexLabel: "Matlab" },
-                { y: 10, indexLabel: "HTML/CSS/JS" }
+                { y: 30, indexLabel: "HTML/CSS/JS" }
             ]
         }]
     });
