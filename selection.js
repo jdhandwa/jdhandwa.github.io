@@ -7,7 +7,7 @@ $("#name").hover(function() {
     $("#me").animate({
         opacity: '0.9',
     })
-    $("#me").attr("src", "me.jpg");
+    $("#me").attr("src", "images/me.jpg");
     console.log("SHMEET");
 })
 $("#contact").hover(function() {
@@ -16,7 +16,7 @@ $("#contact").hover(function() {
             opacity: '1',
         })
     */
-    $("#me").attr("src", "me.jpg");
+    $("#me").attr("src", "images/me.jpg");
     $("#me").animate({
         opacity: '1',
     })
@@ -27,7 +27,7 @@ $("#education").hover(function() {
     $("#me").animate({
         opacity: '0.8',
     })
-    $("#me").attr("src", "ucd_cs.jpg");
+    $("#me").attr("src", "images/ucd_cs.jpg");
     $("#me").animate({
         opacity: '0.9',
     })
@@ -37,7 +37,7 @@ $("#experience").hover(function() {
     $("#me").animate({
         opacity: '0.8',
     })
-    $("#me").attr("src", "intel.jpg");
+    $("#me").attr("src", "images/intel.jpg");
     $("#me").animate({
         opacity: '0.9',
     })
