@@ -1,7 +1,10 @@
 $(document).ready(function() {
 
-
 });
+
+/*
+ *  ICONS FROM: https://iconmonstr.com/
+ */
 
 $("#name").hover(function() {
     $("#me").animate({
@@ -57,6 +60,10 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+
+/*
+ *  PIEPLOT SOURCE: https://canvasjs.com/docs/charts/chart-types/html5-pie-chart/
+ */
 
 window.onload = function() {
     var chart = new CanvasJS.Chart("chartContainer", {
