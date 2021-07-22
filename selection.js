@@ -11,8 +11,8 @@ $("#name").hover(function() {
         opacity: '0.9',
     })
     $("#me").attr("src", "images/me.jpg");
-    console.log("SHMEET");
 })
+
 $("#contact").hover(function() {
     /*
     $("#me").animate({
